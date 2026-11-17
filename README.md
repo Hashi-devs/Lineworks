@@ -1,6 +1,6 @@
 # Studio-AR
 
-Sketch Studio by AR Studios: turn a photo of a drawing into clean digital art, right in the browser.
+Lineworks by AR Studios: turn a photo of a drawing into clean digital art, right in the browser.
 
 - **Type:** Line art (one ink colour), Coloured (keeps the colours), or Photo.
 - **Clean-up** and **Lines** sliders, and a switch to remove notebook lines (ruled lines and the margin line).

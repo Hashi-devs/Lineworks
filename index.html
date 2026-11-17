@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sketch Studio</title>
+<title>Lineworks by AR Studios</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap">
 <style>
 @font-face{font-family:'Google Sans Flex';src:url(/fonts/google-sans-flex/GoogleSansFlex.woff) format('woff');font-weight:300 800;font-style:normal;font-display:swap}
@@ -97,7 +97,7 @@ h1{font:400 clamp(34px,8vw,56px)/1.05 "IM Fell English",Georgia,serif;letter-spa
 :focus-visible{outline:3px solid var(--acc);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){.flip{transition:none}.slide.in-r,.slide.in-l,.ov{animation:none}}
 </style></head><body><div class="deco" aria-hidden="true"></div><main>
-<h1>Sketch Studio</h1>
+<h1>Lineworks</h1>
 <p class="sub">Vectorise and digitise your arts here</p>
 <div class="wrap">
  <div class="board" id="board">
@@ -152,7 +152,7 @@ h1{font:400 clamp(34px,8vw,56px)/1.05 "IM Fell English",Georgia,serif;letter-spa
   <button class="btn" id="figCopy">COPY FOR FIGMA</button><button class="btn alt" id="figSvg">DOWNLOAD SVG</button><button class="btn x" id="figNo">Not now</button></div>
 </div>
 <script>
-/* Sketch Studio engine: no UI, no dependencies, runs in any modern browser.
+/* Lineworks engine: no UI, no dependencies, runs in any modern browser.
 
    import {digitise, mockup} from './sketch-studio-engine.js';
 
@@ -821,7 +821,7 @@ $('#dl').onclick=async()=>{
  if(r==='saved'&&line)openFig()};
 $('#sh').onclick=async()=>{
  if(!S.has)return;const b=await toB(current(),isLine()),f=new File([b],nameNow(),{type:b.type});
- try{if(navigator.canShare&&navigator.canShare({files:[f]}))await navigator.share({files:[f],title:'Sketch Studio'});else msg('Sharing isn’t available here. Use Download instead.')}
+ try{if(navigator.canShare&&navigator.canShare({files:[f]}))await navigator.share({files:[f],title:'Lineworks'});else msg('Sharing isn’t available here. Use Download instead.')}
  catch(e){if(e.name!=='AbortError')msg('Sharing isn’t available here. Use Download instead.')}};
 
 /* Trace the line art into smooth vector outlines (SVG) for Figma. */
